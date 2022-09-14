@@ -1,24 +1,7 @@
-.ch1{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-    background-color:rgb(230, 201, 222);}
-.ch2{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-        background-color:rgb(230, 201, 222);}
-.ch3{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-    background-color:rgb(230, 201, 222);}
-.ch4{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-    background-color:rgb(230, 201, 222);}
-.ch5{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-    background-color:rgb(230, 201, 222);}
-.ch6{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-    background-color:rgb(230, 201, 222);}
-.ch7{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-        background-color:rgb(230, 201, 222);}
-.ch8{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-            background-color:rgb(230, 201, 222);}
-.ch9{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-     background-color:rgb(230, 201, 222);}
-.ch10{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-                    background-color:rgb(230, 201, 222);}
- .ch11{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-                        background-color:rgb(230, 201, 222);}
- .ch12{display:inline-block;width:7.5%;height:500px;border:1px solid skyblue;
-                            background-color:rgb(230, 201, 222);}
+.ch1{
+    display:inline-block;
+    width:7.5%;
+    height:500px;
+    border:1px solid skyblue;
+    background-color:rgb(230, 201, 222);
+}
