@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #dddd;
+}
+header{
+    margin:10 10;
+}
+h1{
+    padding: 10;
+    text-align: center;
+    background-color: white;
+}
+header p{
+    text-align: center;
+    background-color: white;
+    padding: 10;
+    font-size:13;
+}
+nav{
+    background-color:black ;
+    display: inline-block;
+   
+}
+nav ul li{
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+}
+nav ul .link{
+    margin-left: 1155px;
+}
+.sub{
+    width: 100%;
+}
+.bo1 ,.bo2{
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+    margin: 20 0;
+}
+.bo1  h3{
+    background-color: gray;
+    padding-bottom: 98px;
+    margin: 19px 0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.bo2 h3{
+    background-color: gray;
+    padding-bottom: 98px;
+    margin: 19px 0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.bo3 ,.bo4 ,.bo5{
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+    margin: 20 5;
+    width:79%;
+    margin-left: 22px;
+}
+.bo3 h3{
+    background-color: gray;
+    padding: 10px;
+    padding-bottom: 45px;
+} 
+.content1{
+    display: inline-block;
+    width: 70%;
+    margin-left: 10px;
+}
+.content2{
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+}
+.bo4 li{
+    background-color: gray;
+    padding-bottom: 39px;
+    list-style: none;
+    padding-left: 10;
+}
+footer{
+    background-color: gray;
+    text-align: center;
+    padding: 20;
+    font-size: 19
+}
