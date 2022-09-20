@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media(max-width:1200px) {
+    .main {
+      background-color: rgb(34, 180, 46);
+    }
+  }
+  @media(max-width:991px) {
+    .main{
+        background-color: blue;
+    }
+    
+  }
+  @media(max-width:767px) {
+    .main{
+        background-color: red;
+    }
+    
+  }
+  @media(max-width:575px) {
+    .main{
+        background-color: yellow;
+    }
+    
+  }
+  @media(max-width:1200px) {
+    h2{
+       display: inline-block;
+       width:24%;
+       background-color: lawngreen;
+       
+   }
+   
+ }
+ 
+  @media(max-width:991px) {
+    h2{
+      background-color: maroon;
+       width:49%;
+       
+   }
+   
+ }
+ @media(max-width:767px) {
+  h2{
+     display:block;
+     width:100%;
+     background-color: blueviolet;
+     
+ }
+ 
+}
+  
+  
+

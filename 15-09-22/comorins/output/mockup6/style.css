@@ -318,13 +318,14 @@ color: #FFFFFF;
     display: inline-block;
     width: 22%;
 }
-.subseq3 p{
+.subseq3 li{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
     line-height: 195.19%;
     color: #FFFFFF;
+    list-style: none;
 }
 footer{
     

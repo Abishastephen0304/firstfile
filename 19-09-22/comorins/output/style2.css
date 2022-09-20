@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (min-width:575px) {
+    p{
+    width: 100%;
+    border: 3px solid;
+    background-color: green;
+    }
+    
+}
+@media (min-width:767px) {
+    p{
+        display: inline-block;
+    width: 45%;
+    border: 3px solid ;
+    background-color: rgb(19, 173, 194);
+    }
+    
+}
+@media (min-width:991px) {
+    p{
+        display: inline-block;
+    width: 30%;
+    border: 3px solid ;
+    background-color: green;
+    }
+    
+}
+@media (min-width:1200px) {
+    p{
+        display: inline-block;
+    width: 20%;
+    border: 3px solid ;
+    background-color: green;
+    }
+    
+}
