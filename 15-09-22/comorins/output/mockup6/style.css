@@ -132,17 +132,15 @@ color: #000000;
 }
 .sub1{
     display: inline-block;
-    width: 67%;
-}
-.pic3{
-    margin-left: 48px;
+    width: 63%;
 }
 .main{
     width: 100%;
+    margin: 66px 29px;
 }
 .sub11{
     display: inline-block;
-    margin-top: 97px;
+    margin-bottom: 142px;
 }
 .sub2{
     display: inline-block;
@@ -206,10 +204,7 @@ font-size: 16px;
 line-height: 153.19%;
 color: #8F8F8F;
 }
-.sub12{
-    width: 100%;
-    margin-left:32px
-}
+
 .sub12 .img1{
     width: 28%;
     display: inline-block;
@@ -312,7 +307,7 @@ color: #FFFFFF;
     width: 33%;
 }
 .pic7{
-    background: url(.jpg), #C4C4C4;
+    background: #C4C4C4;
 }
 .subseq3{
     display: inline-block;

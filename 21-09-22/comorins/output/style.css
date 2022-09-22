@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hd{
+    background-color: gray;
+    padding:30px;
+}
+nav{
+    padding:20px;
+    background-color:rgb(174, 168, 180);
+}
+.bo{
+    background-color: rgb(141, 130, 130);
+    padding:200px;
+
+}
+.bo1{
+    background-color: rgb(172, 156, 156);
+    padding: 200px;
+}
+.fot{
+    background-color: rgb(131, 119, 119);
+    padding:20px;
+}

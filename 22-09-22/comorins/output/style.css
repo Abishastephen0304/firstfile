@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: gray;
+}
+header{
+    color: white;
+}
+nav li{
+    padding-left:61px;
+}
+
+.sub{
+    margin-right: 17px;
+    background-color: white;
+    
+}
+.po1{
+    margin: 0;
+}
+.p11{
+    padding: 0;
+}
+.po11 ,.po12{
+    margin:10px 0px;
+}
+.po12{
+    margin-top:26px;
+}
+
+.ul1 li{
+    text-decoration: underline;
+    margin-top: 35px;
+}
