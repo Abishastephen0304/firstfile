@@ -13,22 +13,14 @@ nav li{
 }
 
 .sub{
-    margin-right: 17px;
+    margin-right: 10px;
     background-color: white;
+    padding: 20px;
     
 }
-.po1{
-    margin: 0;
-}
-.p11{
-    padding: 0;
-}
-.po11 ,.po12{
-    margin:10px 0px;
-}
-.po12{
-    margin-top:26px;
-}
+
+
+
 
 .ul1 li{
     text-decoration: underline;
