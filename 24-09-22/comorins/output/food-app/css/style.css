@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (min-width:1200px) {
+    
+
+body{
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+.n1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+color: #EB5757;
+}
+.n2{
+    
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+color: #333333;
+}
+.n3 h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 90px;
+color: #333333;
+
+}
+.n3{
+    margin-top: 184px;
+    margin-left: 193px;
+}
+.pic3{
+    margin-top: 70px
+}
+section h4{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.16em;
+color: #EB5757;
+
+}
+section h3{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 45px;
+line-height: 60px;
+text-align: center;
+color: #333333;
+margin: 0 393px;
+
+}
+section h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 70px;
+color: #000000;
+
+}
+section p{
+    margin: 0 87px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+color: #333333;
+
+}
+.pic04{
+    margin-left: 134px;
+}
+.pic05{
+    margin-left:88px;
+}
+.pic06{
+    margin-left: 77px;
+}
+footer{
+    margin-top: 100px;
+}
+footer p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+color: #333333;
+margin-right: 182px;
+margin-top: 23px;
+margin-bottom: 23px
+
+}
+
+footer h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 22px;
+color: #000000;
+
+}
+footer li{
+    list-style: none;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+color: #333333;
+
+}
+footer h3{
+    
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    
+}
+footer h4{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+color: #333333;
+
+}
+
+
+
+}

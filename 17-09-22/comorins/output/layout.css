@@ -15,34 +15,35 @@ nav{
 
 .li1{
     font-family: 'Inter';
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-color: #EC483C;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #EC483C;
 
 }
 .li2{
+    padding: 4px;
     font-family: 'Inter';
-font-weight: 600;
-font-size: 20px;
-line-height: 24px;
-color: #FFFFFF;
-background: #EC483C;
-border-radius: 10px;
-}
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #EC483C;
+    border-radius: 10px;
+    }
 nav li{
     display: inline-block;
     font-family: 'Inter';
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-color: #494D56;
-margin-left: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #494D56;
+    margin-left: 68px;
 
 }
 nav ul{
     display: inline-block;
-    margin-left: 145px;
+    margin-left: 111px;
     
 }
 .main{
@@ -62,14 +63,11 @@ nav ul{
 }
 .main1 h2{
     font-family: 'Helvetica';
-
-font-size: 44px;
-line-height: 55px;
-
-align-items: center;
-
-color: #494D56;
-margin-bottom: 90px
+    font-size: 44px;
+    line-height: 55px;
+    align-items: center;
+    color: #494D56;
+    margin-bottom: 90px
 }
 .main1 p{
     font-family: 'Helvetica';
@@ -117,11 +115,13 @@ color: #FFFFFF;
     
 }
 .main33 input{
+    vertical-align: text-bottom;
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 10px;
     padding: 5px 10px;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    margin-left: 89px;
 
 }
 .main33{

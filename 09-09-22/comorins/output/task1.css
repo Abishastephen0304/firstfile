@@ -1,6 +1,9 @@
-.main{margin:40px;
-     width:35%;
-     height:45%;
-     border:8px solid blue;
+.main ,.sub{margin:40px;
+     width:25%;
+     height:55%;
+     border:15px solid blue;
      background-color:skyblue;
+     }
+     p{
+          padding: 10px;
      }

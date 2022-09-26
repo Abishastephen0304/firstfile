@@ -2,205 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #dddd; 
-       width: 1200px;
-    margin: 0 auto;
 
-}
- header{
-    margin:10 10;
-}
-h1{
-    font-size: 36px;
-    text-align: center;
-    background-color: white;
-    padding: 10px 10px
-}
-header p{
-    
-    text-align: center;
-    background-color: white;
-    padding: 10;
-    font-size: 13;
-    font-size: 12px;
-    padding: 10px;
-
-}
-nav{
-    background-color: black;
-    display: inline-block;
-}
-nav ul{
-    display: inline-block;
-}
-nav li{
-    color: white;
-    margin-left: 20px;
-    display: inline-block;
-}
-.link{
-    margin-left: 1175px;
-}
-.main{
-    width: 100%;
-}
-.main1{
-    display: inline-block;
-    width: 71%;
-}
-.main2{
-    display: inline-block;
-    width: 25%;
-    vertical-align: top;
-}
-.main1 ,.main2{
-    margin:9px;
-}
-.main p{
-    padding: 10px 0px;
-}
-.bo1, .bo2 {
-    background-color: white;
-    padding: 20px;
-    display: inline-block;
-    margin: 21px 7px;
-}
-.main1 h3{
-    background-color: gray;
-    padding-bottom: 98px;
-    margin: 19px 0;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-.bo3 ,.bo4 ,.bo5{
-    background-color: white;
-    padding: 14px;
-    display: inline-block;
-    margin: 22px 10px;
-    width: 79%
-}
-.bo3 h3{
-    background-color: gray;
-    padding: 10px;
-    padding-bottom: 45px;
-}
-.bo4 li{
-    background-color: gray;
-    list-style: none;
-    padding-left: 10;
-    padding: 19px 10px;
-}
-footer{
-    background-color: rgb(192, 185, 185);
-    text-align: center;
-    font-size: 25;
-    padding: 25px;
-}
-@media(min-width:767px) {
-    
- 
-    body{
-        background-color: #dddd; 
-           width:767px;
-        margin: 0 auto;
-    
-    }
-     header{
-        margin:10px 10px;
-    }
-    h1{
-        font-size: 36px;
-        text-align: center;
-        background-color: white;
-        padding: 10px 10px
-    }
-    header p{
-        
-        text-align: center;
-        background-color: white;
-        padding: 10;
-        font-size: 16;
-        font-size: 12px;
-        padding: 10px;
-    
-    }
-    nav{
-        background-color: black;
-        display: block;
-        
-    }
-    nav ul{
-    
-        text-align: center;
-        display: block;
-    }
-    nav li{
-        display: inline-block;
-        color: white
-        
-    
-    }
-    .link{
-        margin-left:20px;
-    }
-    
-    .main{
-        width: 100%;
-    }
-    .main1{
-        display: inline-block;
-        width: 64%;
-    }
-    .main2{
-        display: inline-block;
-        width: 25%;
-        vertical-align: top;
-    }
-    .main1 ,.main2{
-        margin:0px;
-    }
-    .main p{
-        padding: 10px 0px;
-    }
-    .bo1, .bo2 {
-        background-color: white;
-        padding: 20px;
-        display: inline-block;
-        margin: 21px 7px;
-    }
-    .main1 h3{
-        background-color: gray;
-        padding-bottom: 98px;
-        margin: 19px 0;
-        padding-left: 10px;
-        padding-top: 10px;
-    }
-    .bo3 ,.bo4 ,.bo5{
-        background-color: white;
-        padding: 14px;
-        display: inline-block;
-        margin: 22px 10px;
-        width: 79%
-    }
-    .bo3 h3{
-        background-color: gray;
-        padding: 10px;
-        padding-bottom: 45px;
-    }
-    .bo4 li{
-        background-color: gray;
-        list-style: none;
-        padding-left: 10;
-        padding: 19px 10px;
-    }
-    footer{
-        background-color: rgb(192, 185, 185);
-        text-align: center;
-        font-size: 25;
-        padding: 25px;
-    }
-}
 @media(min-width:575px){
     body{
         background-color: #dddd; 
@@ -243,9 +45,7 @@ footer{
         
     
     }
-    .link{
-        margin-left:20px;
-    }
+    
     
     .main{
         width: 100%;
@@ -303,3 +103,206 @@ footer{
         padding: 25px;
     }
 }
+
+    @media(min-width:767px) {
+        
+     
+        body{
+            background-color: #dddd; 
+               width:767px;
+            margin: 0 auto;
+        
+        }
+         header{
+            margin:10px 10px;
+        }
+        h1{
+            font-size: 36px;
+            text-align: center;
+            background-color: white;
+            padding: 10px 10px
+        }
+        header p{
+            
+            text-align: center;
+            background-color: white;
+            padding: 10;
+            font-size: 16;
+            font-size: 12px;
+            padding: 10px;
+        
+        }
+        nav{
+            background-color: black;
+            display: block;
+            
+        }
+        nav ul{
+        
+            text-align: center;
+            display: block;
+        }
+        nav li{
+            display: inline-block;
+            color: white
+            
+        
+        }
+        
+        
+        .main{
+            width: 100%;
+        }
+        .main1{
+            display: inline-block;
+            width: 64%;
+        }
+        .main2{
+            display: inline-block;
+            width: 25%;
+            vertical-align: top;
+        }
+        .main1 ,.main2{
+            margin:0px;
+        }
+        .main p{
+            padding: 10px 0px;
+        }
+        .bo1, .bo2 {
+            background-color: white;
+            padding: 20px;
+            display: inline-block;
+            margin: 21px 7px;
+        }
+        .main1 h3{
+            background-color: gray;
+            padding-bottom: 98px;
+            margin: 19px 0;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .bo3 ,.bo4 ,.bo5{
+            background-color: white;
+            padding: 14px;
+            display: inline-block;
+            margin: 22px 10px;
+            width: 79%
+        }
+        .bo3 h3{
+            background-color: gray;
+            padding: 10px;
+            padding-bottom: 45px;
+        }
+        .bo4 li{
+            background-color: gray;
+            list-style: none;
+            padding-left: 10;
+            padding: 19px 10px;
+        }
+        footer{
+            background-color: rgb(192, 185, 185);
+            text-align: center;
+            font-size: 25;
+            padding: 25px;
+        }
+    }
+    @media (min-width:1200px) {
+    
+
+        body{
+            background-color: #dddd; 
+               width: 1200px;
+            margin: 0 auto;
+        
+        }
+         header{
+            margin:10 10;
+        }
+        h1{
+            font-size: 36px;
+            text-align: center;
+            background-color: white;
+            padding: 10px 10px
+        }
+        header p{
+            
+            text-align: center;
+            background-color: white;
+            padding: 10;
+            font-size: 13;
+            font-size: 12px;
+            padding: 10px;
+        
+        }
+        nav{
+            padding: 10px;
+            background-color: black;
+            display: inline-block;
+        }
+        nav ul{
+            display: inline-block;
+        }
+        nav li{
+            color: white;
+            margin-left: 24px;
+            display: inline-block;
+        }
+        .link{
+            margin-left: 974px;
+        }
+        .main{
+            width: 100%;
+        }
+        .main1{
+            display: inline-block;
+            width: 71%;
+        }
+        .main2{
+            display: inline-block;
+            width: 25%;
+            vertical-align: top;
+        }
+        .main1 ,.main2{
+            margin:9px;
+        }
+        .main p{
+            padding: 10px 0px;
+        }
+        .bo1, .bo2 {
+            background-color: white;
+            padding: 20px;
+            display: inline-block;
+            margin: 21px 7px;
+        }
+        .main1 h3{
+            background-color: gray;
+            padding-bottom: 98px;
+            margin: 19px 0;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .bo3 ,.bo4 ,.bo5{
+            background-color: white;
+            padding: 14px;
+            display: inline-block;
+            margin: 22px 10px;
+            width: 79%
+        }
+        .bo3 h3{
+            background-color: gray;
+            padding: 10px;
+            padding-bottom: 45px;
+        }
+        .bo4 li{
+            background-color: gray;
+            list-style: none;
+            padding-left: 10;
+            padding: 19px 10px;
+        }
+        footer{
+            background-color: rgb(192, 185, 185);
+            text-align: center;
+            font-size: 25;
+            padding: 25px;
+        }
+        }
