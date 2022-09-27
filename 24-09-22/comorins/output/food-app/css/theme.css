@@ -57,8 +57,13 @@ color: #333333;
 
     }
     .nav21{
-        margin: 99px 144px
+        
+    padding-top: 60px;
+    padding-left: 76px;
+
     }
+    
+
    .sec1 h3{
     font-family: 'Poppins';
 font-style: normal;
@@ -108,16 +113,12 @@ color: #828282;
 
    } 
    .sec1{
-    margin: 111px 118px;
+    padding-top: 136px;
    }
    .sec2{
     margin-top: 180px;
    }
-   .sec21 {
-     margin-left: 71px;
-     margin-right: 71px;
-     margin-bottom: 40px;
-   }
+   
    .sec2 h3{
     font-family: 'Poppins';
     font-style: normal;
@@ -151,8 +152,7 @@ color: #000000;
 
    }
    .list-card{
-    margin-top: 40px;
-    margin-left: 77px;
+    padding-top: 40px;
    }
    footer{
     margin-top: 100px;
