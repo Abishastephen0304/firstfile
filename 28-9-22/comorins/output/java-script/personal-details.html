@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let resume={
+                    name:"ABISHA S",
+    
+                    education:[
+                                {
+                                study:"12th",
+                                institute:"st.mary's h.sc school",
+                                mark:75,
+                                },
+                                {
+                                study:"b.sc",
+                                institute:"st.johns college",
+                                mark:83,
+                                },
+                                {
+                                study:"m.sc",
+                                institute:"st.johns college",
+                                mark:90,
+                                },
+
+                                ],
+                    hobbies:["singing", "dancing","wathching movies"],
+                    personal_details:{
+                                DOB:"03-04-2000",
+                                gender:"female",
+                                email:"abishastephen3@gmail",
+                                phone_number:'9047376578',
+                                family_details:{
+                                                father_name:"stephen",
+                                                mother_name:"latha",
+                                                sister_name:"jenisha",
+                                                address:["10/155","anakuzhi","palappallam"],
+                                },
+                    skills:["PGDCA"],
+                    experience:["fresher"],
+                    
+                    }
+                     };
+                     for(let i=0;i<resume.education.length; i++){
+                        console.log(resume.education[i].institute)
+                     }
+                     let total=0;
+                     for(let j=0;j<resume.education.length;j++){
+                        console.log(resume.education[j].mark)
+                        total=total+resume.education[j].mark
+                     }
+                     console.log(total)
+                     let percentage=total/resume.education.length
+                     console.log(percentage)
+                     let count=0;
+                     
+                     
+    </script>
+</body>
+</html>
