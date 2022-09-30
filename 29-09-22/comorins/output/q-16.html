@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function evalNumber(num1,num2,operation) {
+            if (operation=="add") {
+                console.log(num1 + num2)
+                
+            }
+            else if (operation=="subract") {
+                console.log(num1 -num2)
+                
+            }
+            else if (operation=="multiply") {
+                console.log(num1*num2)
+                
+            }
+            else if (operation=="divide") {
+                console.log(num1/num2)
+                
+            }
+            else if (operation=="modulus") {
+                console.log(num1%num2)
+                
+            }
+            else{
+                console.log("Invalied operation")
+            }
+            
+        }
+        evalNumber(4,6,"add")
+        evalNumber(81,9,"divide")
+        evalNumber(6,7,8)
+    </script>
+</body>
+</html>

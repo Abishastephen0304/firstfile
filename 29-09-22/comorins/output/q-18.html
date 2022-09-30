@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function FindGrade(mark) {
+            if (mark>=90 && mark<=100) {
+            console.log("S Grade")
+            
+        }
+        else if (mark>=80 && mark<=89) {
+            console.log("A Grade")
+            
+        }
+        else if (mark>=70 && mark<=79) {
+            console.log("B Grade")
+            
+        }
+        else if (mark>=60 && mark<=69) {
+            console.log("C Grade")
+            
+        }
+        else if (mark>=50 && mark<=59) {
+            console.log("D Grade")
+        }
+        else if(mark>=40 && mark<=49){
+            console.log("E Grade")
+        }
+        else if(mark>=0 && mark<=39){
+            console.log("F Grade")
+        }
+        else{
+            console.log("Invalied marks ")
+        }
+            
+        }
+    
+        FindGrade(98)
+        FindGrade(76)
+        FindGrade(65)
+        FindGrade(55)
+        FindGrade(35)
+        FindGrade("u")
+    </script>
+</body>
+</html>
