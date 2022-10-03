@@ -8,10 +8,17 @@
 </head>
 <body>
     <script>
-        let a=
-        function deleteElement(a,b) {
-            
-        }
+        let array=[4,6,8,2,9,7,5,3]
+        function deleteElement(array,item) {
+        for (let i=0;i<array.length;i++){
+        if(array[i]==item){
+        array.splice(i,1); 
+    }
+  }
+  return array;                                                                     
+}
+
+console.log(deleteElement(array,6))
     </script>
 </body>
 </html>
