@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class User{
+ constructor(fname){
+   this.name=fname;
+   this.place="nagercoil";
+  
+ }
+  getname(){
+    return this.name
+  }
+  getplace(){
+    return this.place
+  }
+  getnameAndplace(){
+    return this.getname() + this.getplace()
+  }
+  
+}
+let User_class_object=new User("abisha");
+console.log(User_class_object.getname());
+console.log(User_class_object.getplace());
+console.log(User_class_object.getnameAndplace());
+
+
+    </script>
+</body>
+</html>
