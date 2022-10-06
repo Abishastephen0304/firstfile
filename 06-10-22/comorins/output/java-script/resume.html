@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><label>name</label>
+    <input id="name" onkeyup="adddetails('name',this.value)"></br></br>
+    <label>email</label>
+    <input id="email" onkeyup="adddetails('email',this.value)"></br></br>
+    phone_number: <input id="number" onkeyup="adddetails('phone_number',this.value)"></br></br>
+    Objective: <textarea id="Objective" onkeyup="adddetails('Objective',this.value)"></textarea></br></br>
+    Role: <input id="role" onkeyup="adddetails('role',this.value)"></br></br>
+    Experience: <input id="experience" onkeyup="adddetails('experience',this.value)"></br></br>
+    skill: <input id="skill" onkeyup="adddetails('skill',this.value,0)">
+            <input id="skill" onkeyup="adddetails('skill',this.value,1)">
+            <input id="skill" onkeyup="adddetails('skill',this.value,2)">
+            <input id="skill" onkeyup="adddetails('skill',this.value,3)"></br></br>
+    Hobbies:<input id="hobbies" onkeyup="adddetails('Hobbies',this.value,0)">
+            <input id="hobbies" onkeyup="adddetails('Hobbies',this.value,1)">
+            <input id="hobbies" onkeyup="adddetails('Hobbies',this.value,2)"></br></br>
+            
+                <table>
+                    Education:
+                <thead>
+                    <th>course</th>
+                    <th>year</th>
+                    <th>institute</th>
+                    <th>percentage</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input id="course" onkeyup="adddetails('education',this.value,0,'course')"></td>
+                        <td><input id="year" onkeyup="adddetails('education',this.value,0,'year')"></td>
+                        <td><input id="instiute" onkeyup="adddetails('education',this.value,0,'institute')"></td>
+                        <td><input id="percentage" onkeyup="adddetails('education',this.value,0,'percentage')"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="course" onkeyup="adddetails('education',this.value,1,'course')"></td>
+                        <td><input id="year" onkeyup="adddetails('education',this.value,1,'year')"></td>
+                        <td><input id="institute" onkeyup="adddetails('education',this.value,1,'institute')"></td>
+                        <td><input id="percentage" onkeyup="adddetails('education',this.value,1,'percentage')"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="course" onkeyup="adddetails('education',this.value,2,'course')"></td>
+                        <td><input id="year" onkeyup="adddetails('education',this.value,2,'year')"></td>
+                        <td><input id="institute" onkeyup="adddetails('education',this.value,2,'institute')"></td>
+                        <td><input id="percentage" onkeyup="adddetails('education',this.value,2,'percentage')"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="course" onkeyup="adddetails('education',this.value,3,'course')"></td>
+                        <td><input id="year" onkeyup="adddetails('education',this.value,3,'year')"></td>
+                        <td><input id="institute" onkeyup="adddetails('education',this.value,3,'institute')"></td>
+                        <td><input id="percentage" onkeyup="adddetails('education',this.value,3,'percentage')"></td>
+                    </tr>
+                </tbody></br>
+            </table>
+            <table>
+                Certificate
+                <thead>
+                    <th>course_name</th>
+                    <th>Duration</th>
+                    <th>Institute</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input id="course-name" onkeyup="adddetails('Certificate',this.value,0,'course-course-name')"></td>
+                        <td><input id="duration" onkeyup="adddetails('Certificate',this.value,0,'duration')"></td>
+                        <td><input id="institute" onkeyup="adddetails('Certificate',this.value,0,'institute')"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="course-name" onkeyup="adddetails('Certificate',this.value,1,'course-name')"></td>
+                        <td><input id="duration" onkeyup="adddetails('Certificate',this.value,1,'duration')"></td>
+                        <td><input id="institute" onkeyup="adddetails('Certificate',this.value,1,'institute')"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                Project:
+                <thead>
+                    <th>Title</th>
+                    <th>Abstract</th>
+                    <th>Software</th>
+                    <th>Year</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input id="Title" onkeyup="adddetails('Project',this.value,0,'Title')"></td>
+                        <td><input id="Abstract" onkeyup="adddetails('Project',this.value,0,'Abstract')"></td>
+                        <td><input id="Software" onkeyup="adddetails('Project',this.value,0,'Software')"></td>
+                        <td><input id="year" onkeyup="adddetails('Project',this.value,0,'year')"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="Title" onkeyup="adddetails('Project',this.value,1,'Title')"></td>
+                        <td><input id="Abstract" onkeyup="adddetails('Project',this.value,1,'Abstract')"></td>
+                        <td><input id="Software" onkeyup="adddetails('Project',this.value,1,'Software')"></td>
+                        <td><input id="year" onkeyup="adddetails('Project',this.value,1,'year')"></td> 
+                    </tr>
+                </tbody>
+            </table>
+           <h4>Personal_details:</h4>
+           Father_name:<input id="Father-name" onkeyup="adddetails('Personal_details',this.value,'father_name')"></br></br>
+           Mother_name:<input id="Mother-name" onkeyup="adddetails('Personal_details',this.value,'Mother-name')"></br></br>
+           D.O.B:<input id="D.O.B" onkeyup="adddetails('Personal_details',this.value,'D.O.B')"></br></br>
+           Gender:<input id="gender" onkeyup="adddetails('Personal_details',this.value,'gender')"></br></br>
+           Martial_status:<input id="Martial_status" onkeyup="adddetails('Personal_details',this.value,'Martial_status')"></br></br>
+           Addres:<textarea id="address" onkeyup="adddetails('Personal_details',this.value,'address')"></textarea></br></br>
+           Language:<input id="Language" onkeyup="adddetails('Language',this.value,0)">
+                    <input id="Language" onkeyup="adddetails('Language',this.value,1)">
+                    <input id="Language" onkeyup="adddetails('Language',this.value,2)">
+
+
+          
+    <div>
+        <code id="obj-det"></code>
+    </div>
+    <script>
+        let my_resume={
+            skill:[],
+            Hobbies:[],
+            education:[],
+            Certificate:[],
+            Project:[],
+            Personal_details:{},
+            Language:[],
+
+        }
+        // let resume={
+        //             name:"ABISHA S",
+        //             email:"abiaha@gmail.com",
+        //             phone_number:'9047376578',
+        //             education:[
+        //                          {
+        //                         study:"m.sc",
+        //                         institute:"st.johns college arts & science",
+        //                         mark:90,
+        //                         year_of_passing:"2020-2022",
+        //                         },
+        //                         {
+        //                         study:"b.sc",
+        //                         institute:"st.johns college arts & science",
+        //                         mark:83,
+        //                         year_of_passing:"2017-2020",
+        //                         },
+                               
+        //                         {
+        //                         study:"12th",
+        //                         institute:"st.mary's h.sc school",
+        //                         mark:75,
+        //                         year_of_passing:"2016-2017",
+        //                         },
+        //                         {
+        //                         study:"10th",
+        //                         institute:"Goverment h.sc school Anakuzhi",
+        //                         mark:83,
+        //                         year_of_passing:"2014-2016",
+        //                         },
+                               
+
+        //                         ],
+        //              skills:["HTML","CSS"],
+        //              certificatin:{
+        //                 course_name:"PGDCA",
+        //                 institute:"BITS",
+        //                 duration:"1 year",
+        //              },
+        //              project:{
+        //                 title:"",
+        //                 abstract:"",
+
+        //              },
+        //             experience:["fresher"],
+        //             hobbies:["singing", "dancing","wathching movies"],
+        //             personal_details:{
+        //                         DOB:"03-04-2000",
+        //                         gender:"female",
+        //                         martial_status:"",
+        //                         family_details:{
+        //                                         father_name:"stephen",
+        //                                         mother_name:"latha",
+
+        //                                         address:["10/155","anakuzhi","palappallam"],
+        //                         },
+                
+                    
+        //             }
+        //              };
+             function adddetails(key,value,index=null,indexkey=null) {
+                if(index==null && indexkey==null){
+                my_resume[key]=value;
+                }
+                else if(indexkey==null){
+                    my_resume[key][index]=value;
+                }
+                else{
+                    if(!my_resume[key][index]){
+                        my_resume[key][index]={}
+                    }
+                    my_resume[key][index][indexkey]=value;
+                }
+                display();
+                
+             }    
+            function display() {
+                document.getElementById("obj-det").innerHTML=JSON.stringify(my_resume);
+            }
+                     
+    </script>
+</body>
+</html>

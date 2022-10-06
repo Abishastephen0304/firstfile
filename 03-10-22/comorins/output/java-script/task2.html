@@ -25,14 +25,20 @@
             let ele="";
             let local_list=JSON.parse(localStorage.getItem("todos"))
             for (let i = 0; i < list.length; i++) {
-                ele=ele+"<li>"+list[i]+"</li>";
+                ele=ele+"<li>"+list[i]+ "<button onclick='removeItem("+i+")' > Delete </button>"+"</li>";
              
             document.getElementById("list_item").innerHTML=ele;  
                 
             }
                    
         }
-        display();
+        function removeItem(position) {
+            let list_new=JSON.parse(localStorage.getItem("todos"))
+            list_new.splice(position,1);
+            localStorage.setItem("todos",JSON.stringify(list_new))
+           display() 
+        }
+        
     </script>
     
 </body>
