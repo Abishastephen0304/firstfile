@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body><label>name</label>
+<body><label>Name:</label>
     <input id="name" onkeyup="adddetails('name',this.value)"></br></br>
-    <label>email</label>
+    <label>Email:</label>
     <input id="email" onkeyup="adddetails('email',this.value)"></br></br>
-    phone_number: <input id="number" onkeyup="adddetails('phone_number',this.value)"></br></br>
+    Phone_number: <input id="number" onkeyup="adddetails('phone_number',this.value)"></br></br>
     Objective: <textarea id="Objective" onkeyup="adddetails('Objective',this.value)"></textarea></br></br>
     Role: <input id="role" onkeyup="adddetails('role',this.value)"></br></br>
     Experience: <input id="experience" onkeyup="adddetails('experience',this.value)"></br></br>
-    skill: <input id="skill" onkeyup="adddetails('skill',this.value,0)">
+<!-- skil start -->
+    Skill: <input id="skill" onkeyup="adddetails('skill',this.value,0)">
             <input id="skill" onkeyup="adddetails('skill',this.value,1)">
             <input id="skill" onkeyup="adddetails('skill',this.value,2)">
             <input id="skill" onkeyup="adddetails('skill',this.value,3)"></br></br>
     Hobbies:<input id="hobbies" onkeyup="adddetails('Hobbies',this.value,0)">
             <input id="hobbies" onkeyup="adddetails('Hobbies',this.value,1)">
             <input id="hobbies" onkeyup="adddetails('Hobbies',this.value,2)"></br></br>
-            
+            <!-- education -->
                 <table>
                     Education:
                 <thead>
@@ -57,6 +58,7 @@
                     </tr>
                 </tbody></br>
             </table>
+            <!-- certificate -->
             <table>
                 Certificate
                 <thead>
@@ -109,8 +111,9 @@
            Addres:<textarea id="address" onkeyup="adddetails('Personal_details',this.value,'address')"></textarea></br></br>
            Language:<input id="Language" onkeyup="adddetails('Language',this.value,0)">
                     <input id="Language" onkeyup="adddetails('Language',this.value,1)">
-                    <input id="Language" onkeyup="adddetails('Language',this.value,2)">
-
+                    <input id="Language" onkeyup="adddetails('Language',this.value,2)"></br></br></br>
+            <button onclick="display()">SUBMIT</button>
+            <ul id="list-name"></ul>
 
           
     <div>
@@ -200,13 +203,28 @@
                     }
                     my_resume[key][index][indexkey]=value;
                 }
-                display();
+                
                 
              }    
             function display() {
-                document.getElementById("obj-det").innerHTML=JSON.stringify(my_resume);
+                // document.getElementById("obj-det").innerHTML=JSON.stringify(my_resume);
+                if(!localStorage.getItem("object-resume")){
+                    localStorage.setItem("object-resume",JSON.stringify([]))
+                }
+                let list=JSON.parse(localStorage.getItem("object-resume"));
+                list.push(my_resume)
+                localStorage.setItem("object-resume",JSON.stringify(list))
+                namedisplay();
             }
-                     
+            function namedisplay() {
+                let ele="";
+                let local_list=JSON.parse(localStorage.getItem("object-resume"));
+                for(let i=0;i<local_list.length;i++){
+                    ele = ele+"<li> <a href='view.html?name="+local_list[i].name +"'target='_blank'>"+local_list[i].name+"</a></li>"
+                }
+                document.getElementById("list-name").innerHTML=ele;
+            }
+           
     </script>
 </body>
 </html>

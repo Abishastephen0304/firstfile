@@ -7,39 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    <input id="todos">
-    <button onclick="additem()">ADD</button>
-    <ul id="list_item"></ul>
+    <input type="text" id="value"/>
+    <button onclick="add()">add</button>
+    <ul id="to-do-list">
+
+    </ul>
     <script>
-        if(!localStorage.getItem("todos")){
-            localStorage.setItem("todos",JSON.stringify([]))
+    if(!localStorage.getItem("todos")){
+        localStorage.setItem("todos",JSON.stringify([]));
+    }
+    let list=JSON.parse(localStorage.getItem("todos"));
+    function add(){
+        let item=document.getElementById("value").value;
+        list.push(item);
+        localStorage.setItem("todos",JSON.stringify(list))
+        display();
+    }
+    display();
+  
+    function display(){
+        let element="";
+        let local_list=JSON.parse(localStorage.getItem("todos"));
+        for(let i=0; i<local_list.length;i++){
+            element=element+"<li>"+local_list[i]+" "+"<button onclick='removeItem("+i+")'>delete</button>"+"</li>"
         }
-        let list=JSON.parse(localStorage.getItem("todos"));
-        function additem() {
-            let item=document.getElementById("todos").value;
-            list.push(item);
-            localStorage.setItem("todos",JSON.stringify(list))
-            display();
-        }
-        function display() {
-            let ele="";
-            let local_list=JSON.parse(localStorage.getItem("todos"))
-            for (let i = 0; i < list.length; i++) {
-                ele=ele+"<li>"+list[i]+ "<button onclick='removeItem("+i+")' > Delete </button>"+"</li>";
-             
-            document.getElementById("list_item").innerHTML=ele;  
-                
-            }
-                   
-        }
-        function removeItem(position) {
-            let list_new=JSON.parse(localStorage.getItem("todos"))
-            list_new.splice(position,1);
-            localStorage.setItem("todos",JSON.stringify(list_new))
-           display() 
-        }
-        
+        document.getElementById("to-do-list").innerHTML=element
+    }
+    function removeItem(position){
+        let list_new=JSON.parse(localStorage.getItem("todos"));
+        list_new.splice(position,1);
+        localStorage.setItem("todos",JSON.stringify(list_new));
+        display();
+    }
     </script>
-    
+
 </body>
 </html>
