@@ -9,9 +9,9 @@
 <body>
     <script>
         class User{
- constructor(fname){
+ constructor(fname,fplace){
    this.name=fname;
-   this.place="nagercoil";
+   this.place=fplace;
   
  }
   getname(){
@@ -21,13 +21,13 @@
     return this.place
   }
   getnameAndplace(){
-    return this.getname() + this.getplace()
+    return this.getname() +    this.getplace()
   }
   
 }
-let User_class_object=new User("abisha");
-console.log(User_class_object.getname());
-console.log(User_class_object.getplace());
+let User_class_object=new User("abisha","nag");
+// console.log(User_class_object.getname());
+// console.log(User_class_object.getplace());
 console.log(User_class_object.getnameAndplace());
 
 

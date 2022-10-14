@@ -10,25 +10,25 @@
 <body>
     <h1>Resume</h1>
     <div class="container">
-    <label>Name:</label><label></label></br></br>
-    <label>Email:</label><label></label></br></br>
-   <label> Phone_number:</label><label></label></br></br>
-   <label> Objective:</label><label></label></br></br>
-    <label>   Role:</label> <label></label></br></br>
-    <label>Experience:</label><label></label> </br></br>
+    <label>Name:</label><span id="name"></span></br></br>
+    <label>Email:</label><span id="email"></span></br></br>
+   <label> Phone_number:</label><span id="phone_number"></span></br></br>
+   <label> Objective:</label><p id="Objective"></p></br></br>
+    <label>   Role:</label><span id="role"></span> </br></br>
+    <label>Experience:</label><span id="experience"></span> </br></br>
 <!-- skil start -->
     <label> Skill:</label>
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li id="skill0"></li>
+        <li id="skill1"></li>
+        <li id="skill2"></li>
+        <li id="skill3"></li>
     </ul> 
     <label>   Hobbies:</label>
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li id="Hobbies0"></li>
+        <li id="Hobbies1"></li>
+        <li id="Hobbies2"></li>
     </ul>
             <!-- education -->
             <h4>  Education:</h4>
@@ -43,28 +43,28 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="course0"></td>
+                    <td id="year0"></td>
+                    <td id="institute0"></td>
+                    <td id="percentage0"></td>
                   </tr>
                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="course1"></td>
+                    <td id="year1"></td>
+                    <td id="institute1"></td>
+                    <td id="percentage1"></td>
                   </tr>
                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="course2"></td>
+                    <td id="year2"></td>
+                    <td id="institute2"></td>
+                    <td id="percentage2"></td>
                   </tr>
                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="course3"></td>
+                    <td id="year3"></td>
+                    <td id="institute3"></td>
+                    <td id="percentage3"></td>
                   </tr>
                 </tbody>
               </table>
@@ -83,21 +83,21 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td id="course-course-name0"></td>
+                        <td id="duration0"></td>
+                        <td id="institute0"></td>
                     
                       </tr>
                       <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td id="course-course-name1"></td>
+                        <td id="duration1"></td>
+                        <td id="institute1"></td>
                         
                       </tr>
                       <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td id="course-course-name2"></td>
+                        <td id="duration2"></td>
+                        <td id="institute2"></td>
             
                       </tr>
                      
@@ -105,7 +105,7 @@
                   </table>
                    
                 
-            
+            <!--project-->
                <h4> Project:</h4>
                <table class="table table-bordered">
                 <thead>
@@ -119,48 +119,105 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="Title0"></td>
+                    <td id="Abstract0"></td>
+                    <td id="Software0"></td>
+                    <td id="year0"></td>
                 
                   </tr>
                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="Title1"></td>
+                    <td id="Abstract1"></td>
+                    <td id="Software1"></td>
+                    <td id="year1"></td>
                   </tr>
                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="Title2"></td>
+                    <td id="Abstract2"></td>
+                    <td id="Software2"></td>
+                    <td id="year2"></td>
                   </tr>
                  
                 </tbody>
               </table>
                
-                
+                <!--personal details-->
            <h4>Personal_details:</h4>
-           <label> Father_name:</label></br></br>
-           <label> Mother_name:</label></br></br>
-           <label>D.O.B:</label></br></br>
-           <label>Gender:</label></br></br>
-           <label>Martial_status:</label></br></br>
-           <label> Addres:</label></br></br>
+           <label> Father_name:</label><span id="father_name"></span></br></br>
+           <label> Mother_name:</label><span id="Mother-name"></span></br></br>
+           <label>D.O.B:</label><span id="D.O.B"></span></br></br>
+           <label>Gender:</label><span id="gender"></span></br></br>
+           <label>Martial_status:</label><span id="Martial_status"></span></br></br>
+           <label> Addres:</label><span id="address"></span></br></br>
            <label>Language:</label>
            <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li id="Language0"></li>
+            <li id="Language1"></li>
+            <li id="Language2"></li>
            </ul>
         </div>
     <script>
+      let resumeSelect=JSON.parse(localStorage.getItem("object-resume"))
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const product = urlParams.get('name');
         alert(product)
+                  // name
+        for(i=0;i<resumeSelect.length;i++){
+          if(urlParams==resumeSelect[i].name)
+          document.getElementById("name").innerHTML=resumeSelect[i].name;
+          document.getElementById("email").innerHTML=resumeSelect[i].email;
+          document.getElementById("phone_number").innerHTML=resumeSelect[i].phone_number;
+          document.getElementById("Objective").innerHTML=resumeSelect[i].Objective;
+          document.getElementById("role").innerHTML=resumeSelect[i].role;
+          document.getElementById("experience").innerHTML=resumeSelect[i].experience;
+        
+          
+        let skills=resumeSelect[i].skill;
+          for(let i= 0; i<skills.length;i++){
+            document.getElementById("skill"+i).innerHTML=skills[i].skill;
+          }
+          let hobbiess=resumeSelect[i].Hobbies;
+          for(let i= 0; i<hobbiess.length;i++){
+            document.getElementById("Hobbies"+i).innerHTML=hobbiess[i].Hobbies;
+          }
+        let edu=resumeSelect[i].education;
+          for (let i = 0; i < edu.length; i++) {
+            document.getElementById("course"+i).innerHTML=edu[i].course;
+            document.getElementById("year"+i).innerHTML=edu[i].year;
+            document.getElementById("institute"+i).innerHTML=edu[i].institute;
+            document.getElementById("percentage"+i).innerHTML=edu[i].percentage;
+            
+          }
+          let certi=resumeSelect[i].Certificate;
+          for (let i = 0; i < certi.length; i++) {
+            document.getElementById("course-name"+i).innerHTML= certi[i].course-name
+            document.getElementById("duration"+i).innerHTML=certi[i].duration;
+            document.getElementById("institute"+i).innerHTML=certi[i].institute;
+    
+            
+          }
+          
+          let pro=resumeSelect[i].Project;
+          for (let i = 0; i < pro.length; i++) {
+            document.getElementById("Title"+i).innerHTML=pro[i].Title;
+            document.getElementById("Abstract"+i).innerHTML=pro[i].Abstract;
+            document.getElementById("Software"+i).innerHTML=pro[i].Software;
+            document.getElementById("year"+i).innerHTML=pro[i].year;
+            
+          }
+          document.getElementById("father_name"),innerHTML=resumeSelect[i].Personal_details.father_name;
+          document.getElementById("Mother-name"),innerHTML=resumeSelect[i].Personal_details.Mother-name;
+          document.getElementById("D.O.B"),innerHTML=resumeSelect[i].Personal_details.D.O.B;
+          document.getElementById("gender"),innerHTML=resumeSelect[i].Personal_details.gender;
+          document.getElementById("Martial_status"),innerHTML=resumeSelect[i].Personal_details.Martial_status;
+          document.getElementById("address"),innerHTML=resumeSelect[i].Personal_details.address;
+
+          let langu=resumeSelect[i].Language;
+          for(let i= 0; i<langu.length;i++){
+            document.getElementById("Language"+i).innerHTML=langu[i].Language;
+          }
+        }
     </script>
     
 </body>

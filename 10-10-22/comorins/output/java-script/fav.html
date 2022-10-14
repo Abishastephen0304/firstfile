@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Fva list</title>
+    <link href="style.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+
+<body>
+    <header>
+        
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a href="index.html">
+            <img src="images/OLX-Logo.png" class="pic1">
+          </a>
+            <div class="country-select" id="country">
+               
+                    <select class="form-select p-2 "aria-expanded="false">
+                      <option selected>Select country</option>
+                      <option value="1">Canada</option>
+                      <option value="2">India</option>
+                      <option value="3">New York</option>
+                      <option value="3">usa</option>
+                    </select>
+                   
+                </div>
+                <div class="input-group pl-5 ml-5">
+                    <input type="search" class="form-control rounded " placeholder="Find Car Mobile Phone and more...." aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="btn btn-outline-primary">search</button>
+                  </div>
+
+                 <div class="btn1"><button type="button" class="btn btn-primary btn-lg "
+              style="padding-left: 2.5rem; padding-right: 2.5rem;" id="login" onclick="loginpage()">Login</button></div>
+            
+              <div class="btn2"><button type="button" class="btn btn-primary btn-lg "
+              style="padding-left: 2.5rem; padding-right: 2.5rem;" onclick="sellpage()">+Sell</button></div>
+              <div class="btn2"><button type="button" class="btn btn-warning btn-lg "
+                style="padding-left: 2.5rem; padding-right: 2.5rem;" onclick="sellpage()">fav</button></div>
+             
+        
+                    
+            </nav>             
+        </div>
+        </div>
+    
+    </header>
+    <section>
+    <div class="container">
+        <div class="row mt-3" id="addfav">
+            
+            
+      </div>
+
+    </div>
+</section>
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>POPULAR LOCATIONS</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#"></a></li>
+                  <li><a href="#">Kolkata</a></li>
+                  <li><a href="#">Chennai</a></li>
+                  <li><a href="#">Mumbai</a></li>
+                  <li><a href="#">Pune</a></li>
+                
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>TRENDING LOCATIONS</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#"></a></li>
+                  <li><a href="#">Bhubaneshwar</a></li>
+                  <li><a href="#">Hyderabad</a></li>
+                  <li><a href="#">Chandigarh</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Nashik</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>ABOUT US</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">About OLX Group</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">OLXPeople</a></li>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h4>Follow Us</h4>
+                  <ul class="social-network social-circle">
+                   <li><img src="images/fb (1).jpeg"></i></a></li>
+                   <li><img src="images/twitter.jpeg"></i></a></li>
+                  </ul>				
+          </div>
+          </div>
+        <div class="row">
+          <div class="col-md-12 copy">
+            <p class="text-center">&copy; Copyright 2018 - OLX.  All rights reserved.</p>
+          </div>
+        </div>
+      
+      
+        </div>
+        </div>
+      </footer>
+    <script>
+        function view(){
+            let FavDetails=JSON.parse(localStorage.getItem("add_details"));
+            let element=" ";
+            for(let i=0;i<FavDetails.length;i++){
+                element+='<div class="card mb-3  col-4" ><img src='+FavDetails[i].image+'class="card-img-top"alt="..." ><div class="card-body"><h5 class="card-title"><a href="sample.html?id='+FavDetails[i].id+' "target=_blank">'+FavDetails[i].model+'</a></h5><p class="card-text"><small class="text-muted">'+FavDetails[i].price+'</small></p><button onclick="remove('+i+');">Remove</button></div></div>'
+                         
+        }  
+        document.getElementById("addfav").innerHTML=element;  
+        }
+         view();
+        function remove(i){
+        let favlist01=JSON.parse(localStorage.getItem("add_details"));
+        favlist01.splice(i,1);
+        localStorage.setItem("add_details",JSON.stringify(favlist01));
+        view()
+        }
+       
+
+
+
+
+
+
+            // logout button
+// document.getElementById("logout").hidden=true;
+// document.getElementById("login")
+//   .addEventListener("click", () => {
+//     document.getElementById("login").hidden=true;
+// document.getElementById("logout").hidden=false;
+// }, false);
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

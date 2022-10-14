@@ -68,7 +68,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><input id="course-name" onkeyup="adddetails('Certificate',this.value,0,'course-course-name')"></td>
+                        <td><input id="course-name" onkeyup="adddetails('Certificate',this.value,0,'course-name')"></td>
                         <td><input id="duration" onkeyup="adddetails('Certificate',this.value,0,'duration')"></td>
                         <td><input id="institute" onkeyup="adddetails('Certificate',this.value,0,'institute')"></td>
                     </tr>
@@ -207,8 +207,8 @@
                 
              }    
             function display() {
-                // document.getElementById("obj-det").innerHTML=JSON.stringify(my_resume);
-                if(!localStorage.getItem("object-resume")){
+                // document.getElemeentById("obj-det").innerHTML=JSON.stringify(my_resume);
+                if(!localStorag.getItem("object-resume")){
                     localStorage.setItem("object-resume",JSON.stringify([]))
                 }
                 let list=JSON.parse(localStorage.getItem("object-resume"));
